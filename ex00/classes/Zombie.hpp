@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/08 14:20:41 by dcresce           #+#    #+#             */
-/*   Updated: 2026/09/08 14:20:41 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/08 14:26:15 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/08 14:26:54 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <string>
 # include <iostream>
 
+//Zombie class
 class Zombie {
 	private:
 		std::string name;
@@ -30,5 +31,8 @@ class Zombie {
 		void	announce(void);
 
 };
+
+//Zombie use function
+Zombie* newZombie(std::string name);
 
 #endif

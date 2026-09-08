@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/08 14:17:08 by dcresce           #+#    #+#             */
-/*   Updated: 2026/09/08 14:20:06 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/08 14:28:44 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/08 14:28:51 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 int	main(void) {
-	Zombie pol = Zombie("pol");
+	Zombie pol = *newZombie("pol");
 	pol.announce();
 }

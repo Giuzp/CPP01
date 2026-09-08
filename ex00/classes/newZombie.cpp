@@ -5,7 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 08/09/2026 13:50:47 by dcresce           #+#    #+#             */
-/*   Updated: 08/09/2026 13:50:47 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/08 14:29:24 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/08 14:29:24 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Zombie.hpp"
+
+Zombie* newZombie(std::string name) {
+	Zombie zombo = Zombie(name);
+	return &zombo;
+}
