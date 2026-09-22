@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/08 14:26:15 by dcresce           #+#    #+#             */
-/*   Updated: 2026/09/08 14:26:54 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/22 14:36:59 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/22 14:36:59 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 // include
 # include <string>
 # include <iostream>
+# include <memory>
+# include <new>
 
 //Zombie class
 class Zombie {
