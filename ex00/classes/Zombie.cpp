@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/22 14:42:34 by dcresce           #+#    #+#             */
-/*   Updated: 2026/09/22 14:42:34 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/24 11:59:01 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/24 11:59:50 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 //constructor
 Zombie::Zombie(std::string _name) : name(_name) {}
 //destructor
-Zombie::~Zombie() {};
+Zombie::~Zombie() {
+	std::cout << this->name << ": Destroyed" << std::endl;
+}
 
 //Announce
 void	Zombie::announce(void) {

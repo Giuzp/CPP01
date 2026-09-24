@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/22 14:36:59 by dcresce           #+#    #+#             */
-/*   Updated: 2026/09/22 14:36:59 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/24 11:56:38 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/24 11:57:07 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,9 @@ class Zombie {
 
 };
 
-//Zombie use function
+//New zombie function
 Zombie* newZombie(std::string name);
+//random chump
+void	randomChump(std::string name);
 
 #endif
