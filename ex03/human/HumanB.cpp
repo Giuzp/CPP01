@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/27 22:23:41 by dcresce           #+#    #+#             */
-/*   Updated: 2026/09/27 22:24:17 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/27 22:29:09 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/27 22:29:09 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,9 @@ void	HumanB::setWeapon(Weapon& _weapon) {
 
 //Attack
 void	HumanB::attack(void) {
+	if (this->weapon == NULL) {
+		std::cout << this->name << " has no weapon" << std::endl;
+		return;
+	}
 	std::cout << this->name << " attacks with their " << this->weapon->getType() << std::endl;
 }
