@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/27 20:11:03 by dcresce           #+#    #+#             */
-/*   Updated: 2026/09/27 20:17:28 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/27 20:24:43 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/27 20:24:43 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ Weapon::Weapon(std::string _type) : type(_type) {}
 Weapon::~Weapon() {}
 
 //Get the weapon type
-std::string&	Weapon::getType(void) {
-	std::string& typeRef = this->type;
+const std::string&	Weapon::getType(void) {
+	const std::string& typeRef = this->type;
 	return typeRef;
 }
 

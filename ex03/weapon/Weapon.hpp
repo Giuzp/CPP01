@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/27 20:17:18 by dcresce           #+#    #+#             */
-/*   Updated: 2026/09/27 20:17:21 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/27 20:24:37 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/27 20:24:37 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Weapon {
 		Weapon();
 		Weapon(std::string _type);
 		~Weapon();
-		std::string&	getType(void);
+		const std::string&	getType(void);
 		void			setType(std::string _type);
 };
 
