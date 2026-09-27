@@ -6,7 +6,7 @@
 #    By: dcresce <dcresce@student.42lausanne.c    	+#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/05 16:33:55 by dcresce           #+#    #+#              #
-#    Updated: 2026/09/27 16:20:39 by dcresce          ###   ########.fr        #
+#    Updated: 2026/09/27 17:03:35 by dcresce          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ RESET	= \033[0m
 
 #Standard
 
-NAME		= ZombieHord
+NAME		= ZombieHorde
 INC_DIRS	= classes/
 OBJS_DIR 	= obj/
 CC 			= c++

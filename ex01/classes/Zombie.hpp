@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcresce <dcresce@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/27 16:21:56 by dcresce           #+#    #+#             */
-/*   Updated: 2026/09/27 16:21:56 by dcresce          ###   ########.ch       */
+/*   Created: 2026/09/27 16:53:33 by dcresce           #+#    #+#             */
+/*   Updated: 2026/09/27 16:53:33 by dcresce          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,13 @@ class Zombie {
 	public:
 		//constructor
 		Zombie(std::string _name);
+		Zombie();
 		//destructor
 		~Zombie();
 		//announce
 		void	announce(void);
+		//set name
+		void	setname(std::string name);
 
 };
 
