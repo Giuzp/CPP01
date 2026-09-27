@@ -6,7 +6,7 @@
 #    By: dcresce <dcresce@student.42lausanne.c    	+#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/05 16:33:55 by dcresce           #+#    #+#              #
-#    Updated: 2026/09/27 19:07:35 by dcresce          ###   ########.fr        #
+#    Updated: 2026/09/27 19:05:33 by dcresce          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,8 @@ RESET	= \033[0m
 
 #Standard
 
-NAME		= ZombieHorde
-INC_DIRS	= classes/
+NAME		= Violence
+INC_DIRS	= human/ weapon/
 OBJS_DIR 	= obj/
 CC 			= c++
 RM 			= rm -f
@@ -28,10 +28,9 @@ CFLAGS 		= -Wall -Wextra -Werror -std=c++98 -g
 #Sources
 
 SRC_FILES	= main \
-				classes/Zombie \
-				classes/newZombie \
-				classes/randomChump \
-				classes/zombieHorde
+				human/HumanA \
+				human/HumanB \
+				weapon/Weapon
 
 SRCS		= $(addsuffix .cpp, $(SRC_FILES))
 OBJS		= $(addprefix $(OBJS_DIR), $(addsuffix .o, $(SRC_FILES)))
