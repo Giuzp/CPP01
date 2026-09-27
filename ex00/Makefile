@@ -6,7 +6,7 @@
 #    By: dcresce <dcresce@student.42lausanne.c    	+#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/05 16:33:55 by dcresce           #+#    #+#              #
-#    Updated: 2026/09/08 13:57:18 by dcresce          ###   ########.fr        #
+#    Updated: 2026/09/27 16:12:01 by dcresce          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ RESET	= \033[0m
 #Standard
 
 NAME		= BraiiiiiiinnnzzzZ
-INC_DIRS	= ./ classes/
+INC_DIRS	= classes/
 OBJS_DIR 	= obj/
 CC 			= c++
 RM 			= rm -f
@@ -34,6 +34,7 @@ SRC_FILES	= main \
 
 SRCS		= $(addsuffix .cpp, $(SRC_FILES))
 OBJS		= $(addprefix $(OBJS_DIR), $(addsuffix .o, $(SRC_FILES)))
+DEPS		= $(OBJS:.o=.d)
 
 ###
 
@@ -52,7 +53,7 @@ $(NAME): $(OBJS)
 
 $(OBJS_DIR)%.o : %.cpp | $(OBJSF)
 	@mkdir -p $(dir $@)
-	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+	@$(CC) $(CFLAGS) -MMD -MP $(INCLUDES) -c $< -o $@
 
 $(OBJSF):
 	@mkdir -p $(OBJS_DIR)
@@ -74,3 +75,5 @@ valgrind: all
 		--log-fd=2 ./$(NAME) "$(ARGS)"
 
 .PHONY : all clean fclean re valgrind
+
+-include $(DEPS)
